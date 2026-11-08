@@ -158,7 +158,7 @@ class GameController extends ChangeNotifier {
     final expected = state.question!.answer.toLowerCase();
     if (normalized == expected) {
       final elapsed = 30 - state.secondsLeft;
-      final points = 100 + max(0, 50 - elapsed * 2);
+      final points = 100 + max(0, 50 - elapsed * 2).toInt();
       final updated = state.players.map((p) => p.id == playerId ? p.copyWith(score: p.score + points) : p).toList();
       final winner = updated.where((p) => p.id == playerId).firstOrNull;
       state = _copy(players: updated, lastWinner: winner?.name, feedback: '${winner?.name ?? "Player"} found it! +$points',
