@@ -1,0 +1,7 @@
+<!-- Fusionner ces clés dans le dictionnaire principal de ios/Runner/Info.plist -->
+<key>NSLocalNetworkUsageDescription</key>
+<string>Guess The Word utilise le réseau local pour connecter les joueurs sur le même Wi-Fi.</string>
+<key>NSBonjourServices</key>
+<array>
+    <string>_guessword._tcp</string>
+</array>

@@ -1,0 +1,23 @@
+name: guess_the_word
+description: Jeu mobile multijoueur local pour apprendre l'anglais avec des emojis.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  web_socket_channel: ^3.0.1
+  network_info_plus: ^6.1.4
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
